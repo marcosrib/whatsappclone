@@ -24,7 +24,7 @@ const Principal = props => {
       </View>
 
       <View style={{ flex: 12, }}>
-        <TabNavigation />
+        <TabNavigation nav={props.navigation} />
       </View>
     </View>
 

@@ -6,8 +6,12 @@ import FormLogin from './components/FormLogin'
 import Principal from './components/Principal'
 import FormCadastro from './components/FormCadastro'
 import AdicionarContato from './components/AdicionarContato'
+import Conversa from './components/Conversa'
+import Contatos from './components/Contatos'
+import TabNavigation from     './components/TabNavigation'
 
 
+import  Header from './components/Header'
 const AppNavigator = createStackNavigator({
     BoasVindas: {
         screen: BoasVindas
@@ -24,15 +28,23 @@ const AppNavigator = createStackNavigator({
     FormCadastro: {
         screen: FormCadastro
     },
-
+    Conversa: {
+        screen: Conversa
+    },
+    Contatos: {
+        screen: Contatos
+    },
+    TabNavigation: {
+        screen: TabNavigation
+    },
 },
   {
-      initialRouteName:'FormLogin',
-     
-      headerMode: 'screen' ,
+      initialRouteName:'Conversa',
       defaultNavigationOptions:{
-        header: null
-      }
+        header: ( /* Your custom header */
+            <Header/>
+          )
+      },
   }
 );
 

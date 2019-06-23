@@ -1,8 +1,10 @@
+import React from 'react'
 import { createMaterialTopTabNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
 import Contatos from './Contatos'
 import Conversas from './Conversas'
+import Header from './Header'
 const TabNavigation = createMaterialTopTabNavigator({
-   
+
     Conversas: {
       screen: Conversas,
   
@@ -13,7 +15,6 @@ const TabNavigation = createMaterialTopTabNavigator({
   
   },
     {
-  
       tabBarOptions: {
         labelStyle: {
           fontSize: 12,

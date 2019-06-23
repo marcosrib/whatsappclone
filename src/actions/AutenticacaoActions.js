@@ -102,7 +102,7 @@ const loginUsuarioSucesso = (dispatch,navigation) => {
              
             );
       
-            navigation.navigate({ routeName: 'Principal' })
+            navigation.navigate({ routeName: 'TabNavigation' })
 }
 
 
