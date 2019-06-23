@@ -2,12 +2,13 @@ import { createMaterialTopTabNavigator, createAppContainer, createBottomTabNavig
 import Contatos from './Contatos'
 import Conversas from './Conversas'
 const TabNavigation = createMaterialTopTabNavigator({
-    Contatos: {
-      screen: Contatos
-    },
+   
     Conversas: {
       screen: Conversas,
   
+    },
+    Contatos: {
+      screen: Contatos
     },
   
   },

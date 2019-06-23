@@ -4,6 +4,7 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import BoasVindas from './components/BoasVindas'
 import FormLogin from './components/FormLogin'
 import Principal from './components/Principal'
+import FormCadastro from './components/FormCadastro'
 import AdicionarContato from './components/AdicionarContato'
 
 
@@ -20,10 +21,13 @@ const AppNavigator = createStackNavigator({
     AdicionarContato: {
         screen: AdicionarContato
     },
+    FormCadastro: {
+        screen: FormCadastro
+    },
 
 },
   {
-      initialRouteName:'Principal',
+      initialRouteName:'FormLogin',
      
       headerMode: 'screen' ,
       defaultNavigationOptions:{

@@ -47,7 +47,7 @@ class FormLogin extends Component  {
                             onChangeText = {texto => this.props.modificaSenha(texto)} 
                             /> 
                             <Text style={{ fontSize: 20, color:'#ff0000' }}> {this.props.erroLogin} </Text>
-                            <TouchableHighlight onPress={null } >
+                            <TouchableHighlight onPress={() => this.props.navigation.navigate('FormCadastro') } >
                                 <Text  style={{ fontSize: 15, color: '#fff' }}>Ainda não possui cadastro? cadastre-se</Text> 
                             </TouchableHighlight>     
                         </View>    
