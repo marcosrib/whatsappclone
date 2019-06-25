@@ -18,8 +18,8 @@ const Contatos = props => {
 
     }, [props.lista_contato_usuario])
 
-   function navegar(){
-      props.navigation.navigate('Conversa') 
+   function navegar(item){
+      props.navigation.navigate('Conversa',{...item}) 
    }
 
     return (
@@ -28,7 +28,7 @@ const Contatos = props => {
             <FlatList
                 data={contatos}
                 renderItem={({ item }) => (
-                    <TouchableOpacity onPress={navegar}>
+                    <TouchableOpacity onPress={()=>navegar(item)}>
                         <View style={{ flex: 1, borderBottomWidth: 1, margin: 5 }}>
                             <Text style={{ color: '#000', fontWeight: 'bold' }}>{item.nome}</Text>
                             <Text>{item.email}</Text>

@@ -9,4 +9,5 @@ export const  LOGIN_EM_ANDAMENTO = 'login_em_andamento';
 export const  CADASTRO_EM_ANDAMENTO =  'cadastro_em_andamento';
 export const  MODIFICA_ADICIONA_CONTATO_EMAIL = 'modifica_adiciona_contato_email';
 export const  MODIFICA_ADICIONA_CONTATO_ERRO = 'cadastro_resultado_txt_erro'
-export const LISTA_CONTATO_USUARIO =  'lista_contato_usuario'
+export const LISTA_CONTATO_USUARIO =  'lista_contato_usuario';
+export const MODIFICA_MENSAGEM = 'modifica_mensagem'

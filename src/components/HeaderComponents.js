@@ -1,9 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-
-
-
 const HeaderComponents = props => {
     return (
         <View style={{ height: 50, backgroundColor: '#115E54', justifyContent: 'center' }}>

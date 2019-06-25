@@ -39,10 +39,10 @@ const AppNavigator = createStackNavigator({
     },
 },
   {
-      initialRouteName:'Conversa',
+      initialRouteName:'FormLogin',
       defaultNavigationOptions:{
-        header: ( /* Your custom header */
-            <Header/>
+        header: ({navigation}) => ( /* Your custom header */
+            <Header navigation={navigation}/>
           )
       },
   }
