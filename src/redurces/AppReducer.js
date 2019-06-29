@@ -2,7 +2,8 @@ import {
     MODIFICA_ADICIONA_CONTATO_EMAIL,
     MODIFICA_ADICIONA_CONTATO_ERRO,
     LISTA_CONTATO_USUARIO,
-    MODIFICA_MENSAGEM
+    MODIFICA_MENSAGEM,
+    ENVIA_MENSAGEM
 } from '../actions/type'
 
 const INITIAL_STATE = {
@@ -13,8 +14,9 @@ const INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
-    
-    
+
+ 
+
     switch (action.type) {
         case MODIFICA_ADICIONA_CONTATO_EMAIL:
             return { ...state, adiciona_contato_email: action.payload }
@@ -24,6 +26,8 @@ export default (state = INITIAL_STATE, action) => {
             return { ...state, lista_contato_usuario: action.payload }
         case MODIFICA_MENSAGEM:
             return { ...state, mensagem: action.payload }
+        case ENVIA_MENSAGEM:
+            return { ...state, mensagem: '' }
 
         default:
             return state;

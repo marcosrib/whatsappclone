@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState ,} from 'react';
 import { connect } from 'react-redux'
 import { View, Text, StatusBar, FlatList, TouchableOpacity } from 'react-native';
 import _ from 'lodash'
@@ -27,9 +27,10 @@ const Contatos = props => {
             <StatusBar backgroundColor='red' />
             <FlatList
                 data={contatos}
-                renderItem={({ item }) => (
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={({ item,index }) => (
                     <TouchableOpacity onPress={()=>navegar(item)}>
-                        <View style={{ flex: 1, borderBottomWidth: 1, margin: 5 }}>
+                        <View key={index} style={{ flex: 1, borderBottomWidth: 1, margin: 5 }}>
                             <Text style={{ color: '#000', fontWeight: 'bold' }}>{item.nome}</Text>
                             <Text>{item.email}</Text>
                         </View>
