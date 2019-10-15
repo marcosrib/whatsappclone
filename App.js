@@ -19,10 +19,10 @@ export default class App extends Component {
   componentWillMount() {
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyAdIOBGYFkHcPy-lq2bnDv9ojBSPy-hEpY",
-      authDomain: "whatsapp-clone-53c5c.firebaseapp.com",
-      databaseURL: "https://whatsapp-clone-53c5c.firebaseio.com",
-      projectId: "whatsapp-clone-53c5c",
+      apiKey: "",
+      authDomain: "",
+      databaseURL: "",
+      projectId: "",
       storageBucket: "whatsapp-clone-53c5c.appspot.com",
       messagingSenderId: "436231702992"
     };
